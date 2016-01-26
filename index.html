@@ -1,6 +1,37 @@
 ---
-layout: default
+layout: home
 ---
+
+<header class="home-header grey">
+<div class="home-header-content wrapper">
+
+    
+
+  {% for home in site.home %}
+
+  {% if home.homeimage == true %} 
+      <div class="profile-image">{{ home.content | markdownify }}</div>
+  {% endif %}
+{% endfor %}
+    
+    <div class="profile-text">
+  {% for home in site.home %}
+  {% if home.homename == true %} 
+      {{ home.content | markdownify }}
+  {% endif %}
+
+  {% if home.hometitle == true %} 
+      {{ home.content | markdownify }}
+  {% endif %}
+  {% endfor %}
+</div>
+
+</div>
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+      
 
 <div class="home">
 
@@ -9,20 +40,7 @@ layout: default
 
     <header class="post-header">
 
-  {% for home in site.home %}
-    
-
-  {% if home.hometitle == true %} 
-    <article class="home-title">
-      {{ home.content | markdownify }}
-    </article>
-  {% endif %}
-
-  {% if home.homeimage == true %} 
-      <div class="profile-image">{{ home.content | markdownify }}</div>
-  {% endif %}
-
-    {% endfor %}
+ 
   </header>
 
 {% for home in site.home %}
@@ -37,3 +55,6 @@ layout: default
 
 
 </div>
+
+</div>
+    </div>

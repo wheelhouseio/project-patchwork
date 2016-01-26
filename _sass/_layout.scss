@@ -156,6 +156,50 @@
     }
 }
 
+/**
+* Home content
+*/
+
+.home-header-content {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.home-header {
+    margin-top: 0px !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.home-header h1 {
+font-weight: 800;
+font-size: 40px;
+margin-bottom: 0px;
+}
+
+.grey {
+    background-color: #eee;
+}
+
+.profile-image {
+    float: left;
+    padding-right: 30px;
+}
+
+.profile-text {
+    float: left;
+    padding-top: 25px;
+}
+
+.profile-image p {
+    margin-bottom: 0px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 
 
 /**
@@ -164,6 +208,8 @@
 .page-content {
     padding: $spacing-unit 0;
 }
+
+
 
 .page-heading {
     font-size: 20px;
@@ -198,6 +244,16 @@
 }
 
 .post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-subtitle {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
