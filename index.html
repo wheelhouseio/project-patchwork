@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="home">
+
+ 
+  <div class="post">
+
+    <header class="post-header">
+
+  {% for home in site.home %}
+    
+
+  {% if home.hometitle == true %} 
+    <article class="home-title">
+      {{ home.content | markdownify }}
+    </article>
+  {% endif %}
+
+  {% if home.homeimage == true %} 
+      <div class="profile-image">{{ home.content | markdownify }}</div>
+  {% endif %}
+
+    {% endfor %}
+  </header>
+
+{% for home in site.home %}
+  {% if home.homecontent == true %} 
+    <article class="post-content">
+      {{ home.content | markdownify }}
+    </article>
+  {% endif %}
+
+    {% endfor %}
+</div>
+
+
+</div>
