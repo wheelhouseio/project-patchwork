@@ -3,58 +3,27 @@ layout: home
 ---
 
 <header class="home-header grey">
-<div class="home-header-content wrapper">
-
-    
-
-  {% for home in site.home %}
-
-  {% if home.homeimage == true %} 
-      <div class="profile-image">{{ home.content | markdownify }}</div>
-  {% endif %}
-{% endfor %}
-    
-    <div class="profile-text">
-  {% for home in site.home %}
-  {% if home.homename == true %} 
-      {{ home.content | markdownify }}
-  {% endif %}
-
-  {% if home.hometitle == true %} 
-      {{ home.content | markdownify }}
-  {% endif %}
-  {% endfor %}
-</div>
-
-</div>
+  <div class="home-header-content wrapper">
+    {% for home in site.home %}
+      <div class="profile-image"><img src="{{ home.profileimage }}" /img></div>
+      <div class="profile-text">
+        <h1>{{ home.name }}</h1>
+        <h2>{{ home.title }}</h2>
+      </div>
+    {% endfor %}
+  </div>
 </header>
 
-    <div class="page-content">
-      <div class="wrapper">
-      
-
-<div class="home">
-
- 
-  <div class="post">
-
-    <header class="post-header">
-
- 
-  </header>
-
-{% for home in site.home %}
-  {% if home.homecontent == true %} 
-    <article class="post-content">
-      {{ home.content | markdownify }}
-    </article>
-  {% endif %}
-
-    {% endfor %}
-</div>
-
-
-</div>
-
-</div>
+<div class="page-content">
+  <div class="wrapper">
+    <div class="home">
+      <div class="post">
+        {% for home in site.home %}
+          <article class="post-content">
+            {{ home.content | markdownify }}
+          </article>
+        {% endfor %}
+      </div>
     </div>
+  </div>
+</div>

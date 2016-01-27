@@ -3,7 +3,7 @@ title: Super GitHub User
 email: firstname@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Learn to use GitHub pages with Wheelhouse.io and Patchwork!
-baseurl: "/page1"
+baseurl: "/portfolio"
 url: "http://localhost:4000"
 twitter_username: chowdhury
 github_username:  chowdhury
