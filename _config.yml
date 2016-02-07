@@ -1,12 +1,12 @@
 # Site settings
 title: Super GitHub User
-email: firstname@gmail.com
+email: hello@wheelhouse.io
 description: > # this means to ignore newlines until "baseurl:"
   Learn to use GitHub pages with Wheelhouse.io and Patchwork!
 baseurl: "/portfolio"
 url: "http://localhost:4000"
-twitter_username: chowdhury
-github_username:  chowdhury
+twitter_username: WheelhouseIO
+github_username:  wheelhouseio
 permalink: /blog/:year/:title/
 
 
@@ -18,4 +18,4 @@ kramdown:
   input: GFM
 
 collections:
-    - home
+    - index
