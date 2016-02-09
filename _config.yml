@@ -3,8 +3,8 @@ title: Super GitHub User
 email: hello@wheelhouse.io
 description: > # this means to ignore newlines until "baseurl:"
   Learn to use GitHub pages with Wheelhouse.io and Patchwork!
-baseurl: "/portfolio"
-url: 
+baseurl: "/project-patchwork"
+url: "http://wheehouseio.github.io/"
 twitter_username: WheelhouseIO
 github_username:  wheelhouseio
 permalink: /blog/:year/:title/
