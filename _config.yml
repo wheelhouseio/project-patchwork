@@ -4,7 +4,7 @@ email: hello@wheelhouse.io
 description: > # this means to ignore newlines until "baseurl:"
   Learn to use GitHub pages with Wheelhouse.io and Patchwork!
 baseurl: "/portfolio"
-url: "http://localhost:4000"
+url: 
 twitter_username: WheelhouseIO
 github_username:  wheelhouseio
 permalink: /blog/:year/:title/
