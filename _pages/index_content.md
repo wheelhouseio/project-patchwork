@@ -1,6 +1,7 @@
 ---
 index_content: true
 permalink: /index_content/
+layout: page
 ---
 
 Adrian is a product manager with 5 years experience building both digital and offline education products. 
