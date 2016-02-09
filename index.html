@@ -4,11 +4,11 @@ layout: home
 
 <header class="home-header grey">
   <div class="home-header-content wrapper">
-    {% for home in site.home %}
-      <div class="profile-image"><img src="{{ home.profileimage }}" /img></div>
+    {% for header in site.index %}
+      <div class="profile-image"><img src="{{ header.profileimage }}" /img></div>
       <div class="profile-text">
-        <h1>{{ home.name }}</h1>
-        <h2>{{ home.title }}</h2>
+        <h1>{{ header.name }}</h1>
+        <h2>{{ header.title }}</h2>
       </div>
     {% endfor %}
   </div>
@@ -18,9 +18,9 @@ layout: home
   <div class="wrapper">
     <div class="home">
       <div class="post">
-        {% for home in site.home %}
+        {% for index in site.index %}
           <article class="post-content">
-            {{ home.content | markdownify }}
+            {{ index.content | markdownify }}
           </article>
         {% endfor %}
       </div>
