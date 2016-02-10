@@ -5,7 +5,9 @@ permalink: /work-history/
 ---
 
 ## Web Developer
+
 ### Acme Inc.
+
 #### March 2001 — January, 2005
 
 _Created websites for clients._
@@ -16,7 +18,9 @@ _Created websites for clients._
 
 
 ## Job Title
+
 ### Company
+
 #### Date Started - Date Ended
 
 _Description of the job and duties._
